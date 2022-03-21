@@ -1,0 +1,190 @@
+.container .container-ucapan{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 101;
+    left: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 5% 1fr 5%;
+}
+
+.container-ucapan .ucapan-dalam{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    height: 100%;
+    background-color: #a1c6b4;
+    color: white;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+/* Nav ucapan */
+
+.container-ucapan .ucapan-dalam .navigasi-ucapan{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+.container-ucapan .ucapan-dalam .navigasi-ucapan .tab-menu{
+    height: 30px;
+    background-color: #347557;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, .5);
+}
+
+.container-ucapan .ucapan-dalam .navigasi-ucapan .tab-menu.on{
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    box-shadow: 0 0;
+    background-color: #a1c6b4;
+}
+
+.container-ucapan .ucapan-dalam .navigasi-ucapan svg{
+    fill: #347557;
+    justify-self: end;
+    height: 20px;
+    width: 40px;
+    cursor: pointer;
+}
+
+/* tab pages */
+
+.container-ucapan .ucapan-dalam .tab{
+    height: 100%;
+    grid-row: 2/3;
+    text-align: center;
+    width: 100%;
+    margin: 0  auto;
+}
+
+/* container form */
+.container-ucapan .ucapan-dalam .form-kehadiran form{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    text-align: left;
+    grid-template-rows: repeat (auto);
+    gap: 10px;
+}
+
+.container-ucapan .ucapan-dalam .form-kehadiran form #nama, .container-ucapan .ucapan-dalam .form-kehadiran form #kehadiraan{
+    height: 30px;
+    border-radius: 10px;
+}
+
+.container-ucapan .ucapan-dalam .form-kehadiran form button{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #347557;
+    color: white;
+}
+
+/* container area komen */
+.container-ucapan .ucapan-dalam .comment-section{
+    display: grid;
+    width: 90%;
+    height: 90%;
+    grid-template-rows: 40px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    margin: 0 auto;
+    left: 5%;
+    top: 40px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container-ucapan .ucapan-dalam .comment-section .area-ucapan{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: scroll;
+    scrollbar-face-color: #347557;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.ucapan-dalam .comment-section .area-ucapan .person{
+    width: 100%;
+    margin: 10px auto;
+    color: black;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+}
+
+.ucapan-dalam .comment-section .area-ucapan .person img{
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 30px;
+}
+
+.ucapan-dalam .comment-section .area-ucapan .person .kehadiran{
+    display: grid;
+    min-width: 100px;
+    background-color: white;
+    justify-self: stretch;
+    overflow: hidden;
+    border-radius: 10px;
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
+}
+
+.ucapan-dalam .comment-section .area-ucapan .person .kehadiran .info-pengirim{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.ucapan-dalam .comment-section .area-ucapan .person .kehadiran span{
+    width: 100%;
+    height: 2px;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.comment-section .area-ucapan .person .kehadiran .info-pengirim p{
+    height: 14px;
+    border-radius: 7px;
+    padding: 5px 7px;
+    display: flex;
+    margin-left: 10px;
+    align-items: center;
+    background-color: #347557;
+}
+
+.comment-section .area-ucapan .person .kehadiran p{
+    text-align: left;
+    padding-left: 20px;
+}
+
+@media (max-width:576px) {
+    .container .container-ucapan{
+        grid-template-rows: 15% 1fr 5%;
+    }
+}

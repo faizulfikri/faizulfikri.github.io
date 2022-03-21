@@ -1,0 +1,167 @@
+.container .cover-undangan{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, .7);
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 5% 1fr 5%;
+    color: white;
+}
+
+.tidakAktif{
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.container .cover-undangan .container-undanganSatu{
+    width: 100%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container .cover-undangan .container-undanganDua{
+    width: 90%;
+    height: 90%;
+    background-color: #a1c6b4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.container-undanganDua  .bunga-kiri{
+    height: 100px;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+}
+
+.container-undanganDua .bunga-kanan{
+    height: 100px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+
+.container-undanganDua .logo-kanan{
+    height: 100px;
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    display: none;
+}
+
+.container-undanganDua .logo-kiri{
+    height: 100px;
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    display: none;
+}
+
+.container-undanganDua .cover-pengantin{
+    display: flex;
+    margin: 0 auto;
+}
+
+.container-undanganDua .cover-pengantin img{
+    height: 150px;
+}
+
+.container-undanganDua .nama-pengantin{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+}
+
+.container-undanganDua .nama-pengantin h1{
+    text-shadow: 2px 2px rgba(0, 0, 0, .4);
+}
+
+.container-undanganDua .nama-pengantin h3{
+    text-shadow: 2px 2px rgba(0, 0, 0, .4);
+}
+
+.container-undanganDua .buka-undangan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 35px;
+    background-color: #347557;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.container-undanganDua .buka-undangan img{
+    height: 25px;
+}
+
+@media (max-width:576px) {
+    .container .cover-undangan{
+        grid-template-rows: 15% 1fr 5%;
+    }
+
+    .container-undanganDua  .bunga-kiri, .container-undanganDua .bunga-kanan{
+        display: none;
+    }
+
+    .container-undanganDua .cover-pengantin img{
+        display: none;
+    }
+
+    .container .cover-undangan .container-undanganDua .nama-pengantin{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 40%;
+        width: 100%;
+        position: relative;
+    }
+
+    .container-undanganDua .nama-pengantin h1:first-child{
+        grid-row: 3/4;
+        text-align: right;
+        align-self: end;
+        justify-self: end;
+    }
+
+    .container-undanganDua .nama-pengantin h1:last-child{
+        grid-row: 1/2;
+        text-align: left;
+        justify-self: start;
+        align-self: start;
+    }
+
+    .container-undanganDua .nama-pengantin h1{
+        font-size: 36px;
+    }
+    
+   .container-undanganDua .logo-kanan, .container-undanganDua .logo-kiri{
+     display: block;
+   }
+   
+   .container-undanganDua .logo-kiri{
+     top: 22%;
+   }
+   
+   .container-undanganDua .logo-kanan{
+     top: 48%;
+   }
+}

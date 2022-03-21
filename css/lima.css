@@ -1,0 +1,73 @@
+.page .content.lima{
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
+    width: 60%;
+    height: 90%;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    color: white;
+}
+
+.page .content.lima .judulLima{
+    text-shadow: 2px 2px rgba(0, 0, 0, .4);
+}
+
+.page .content.lima .imbauan p{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.page .content.lima .protokol{
+    grid-template-rows: auto auto;
+    gap: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.page .content.lima .protokol .info-kesehatan{
+    padding: 10px;
+}
+
+.page .content.lima .protokol .atas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page .content.lima .protokol .bawah{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page .content.lima .protokol img{
+    height: 80px;
+}
+
+@media (max-width:576px) {
+    .page .content.lima{
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+
+    .page .content.lima .imbauan p{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .page .content.lima .protokol{
+        width: 100%;
+        gap: 10px;
+    }
+
+    .page .content.lima .protokol img{
+        height: 60px;
+    }
+
+    .page .content.lima .protokol p{
+        font-size: 10px;
+    }
+}

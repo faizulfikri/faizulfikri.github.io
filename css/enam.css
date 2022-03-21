@@ -1,0 +1,81 @@
+.page .content.enam{
+    display: grid;
+    grid-template-rows: repeat (auto);
+    gap: 10px;
+    height: 90%;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+.page .content.enam .judulEnam{
+    text-shadow: 2px 2px rgba(0, 0, 0, .4);
+}
+
+.page .content.enam .tulisan-arab{
+    font-size: 24px;
+}
+
+.page .content.enam .latin{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.page .content.enam .pembatas{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .content.enam .pembatas span{
+    height: 1px;
+    width: 45%;
+    background-color: white;
+}
+
+.page .content.enam .pembatas .mid{
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+.page .content.enam .terjemahan p, .page .content.enam .konfirmasi p{
+    font-size: 14px;
+}
+
+.page .content.enam button{
+    color: white;
+    background-color: #347557;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+@media (max-width:576px) {
+    .page .content.enam{
+        width: 100%;
+        gap: 5px;
+    }
+
+    .page .content.enam .tulisan-arab{
+        font-size: 18px;
+    }
+
+    .page .content.enam .latin{
+        font-size: 10px;
+        letter-spacing: 0;
+        font-style: italic;
+    }
+
+    .page .content.enam .pembatas{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .page .content.enam .terjemahan p, .page .content.enam .konfirmasi p{
+        font-size: 10px;
+    }
+}

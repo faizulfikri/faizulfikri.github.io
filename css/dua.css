@@ -1,0 +1,76 @@
+.page .content.dua{
+    display: grid;
+    color: white;
+    text-align: center;
+    grid-template-rows: 20px auto auto auto auto 20px;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    gap: 10px;
+}
+
+.page .content.dua h4{
+    font-size: 24px;
+    grid-row: 2/3;
+}
+
+.page .content.dua .p-satu{
+    font-size: 14px;
+    grid-row: 3/4;
+}
+
+.page .content.dua .p-dua{
+    font-size: 14px;
+    grid-row: 4/5
+}
+
+/* container pengantin */
+
+.page .content.dua .container-pengantin{
+    grid-row: 5/6;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.page .content.dua .container-pengantin h1{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.page .content.dua .container-pengantin h6{
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+@media (max-width:576px) {
+    .page .content.dua{
+        grid-template-rows: repeat (auto);
+        width: 90%;
+        height: 80%;
+        gap: 10px;
+    }
+
+    .page .content.dua h1{
+        font-size: 30px;
+    }
+
+    .page .content.dua h4{
+        font-size: 20px;
+    }
+
+    .page .content.dua .p-satu, .page .content.dua .p-dua{
+        font-size: 9px;
+    }
+
+    .page .content.dua .container-pengantin{
+        gap: 15px;
+        height: 153px;
+    }
+
+    .page .content.dua .container-pengantin h6{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+}

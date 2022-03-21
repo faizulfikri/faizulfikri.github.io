@@ -1,0 +1,303 @@
+@import url('css/satu.css');
+@import url('css/dua.css');
+@import url('css/tiga.css');
+@import url('css/empat.css');
+@import url('css/lima.css');
+@import url('css/enam.css');
+@import url('css/tujuh.css');
+@import url('css/hiasan.css');
+@import url('css/cover.css');
+@import url('css/ucapan.css');
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+svg{
+    stroke: #ffffff;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    cursor: pointer;
+    height: 35px;
+}
+
+.tombol .menu{
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #a1c6b4;
+    overflow: hidden;
+}
+
+h1{
+    font-family: 'Yellowtail', cursive, sans-serif;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Yellowtail',cursive, sans-serif;
+    font-size: 32px;
+}
+
+h3{
+    font-family: 'Yellowtail', cursive, sans-serif;
+    font-size: 24px;
+}
+
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+h5{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+h6{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11px;
+}
+
+/* Navigasi */
+
+nav{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    align-items: center;
+}
+
+.strokeLuar{
+    width: 40%;
+    height: 50px;
+    background-color: #347557;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.strokeDalam{
+    width: 98%;
+    height: 80%;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #347557;
+}
+
+.strokeDalam .tombol p{
+    display: none;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    top: 60px;
+}
+
+.active{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -33px;
+}
+
+.active.tombol p{
+    display: block;
+}
+
+.active.tombol svg{
+    stroke:#347557;
+    height: 37px;
+}
+
+/* container page */
+
+.container main .page{
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 20px 1fr 20%;
+    grid-template-columns: 5% 1fr 5%;
+    justify-items: center;
+    align-items: start;
+    overflow: hidden;
+}
+
+.container main .page .content{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    overflow: hidden;
+}
+
+.container .two, .container .three, .container .four, .container .five, .container .six, .container .seven{
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Animation */
+.up{
+    animation: up 1s ease-in-out forwards;
+}
+
+.blur{
+    animation: blur 0.3s ease-in-out forwards;
+}
+
+.geserKanan{
+    animation: geserKanan 1s ease-in-out forwards;
+}
+
+.geserKiri{
+    animation: geserKiri 1s ease-in-out forwards;
+}
+
+.jelas{
+    animation: up 0.2s ease-in-out forwards;
+}
+
+.scaleUp{
+    animation: scaleUp 0.5s ease-in-out forwards;
+}
+
+.keatas{
+    animation: keatas 0.7s ease-in-out forwards;
+}
+@keyframes up{
+    0%{
+        opacity: 0;
+        pointer-events: none;
+    }
+    100%{
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+@keyframes blur{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+@keyframes geserKanan{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes geserKiri{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleUp{
+    0%{
+        transform: scale(0.5 , 0.5);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes jelas{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes keatas{
+    0%{
+        transform: translateY(30%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* Responsive */
+
+@media (max-width: 576px){
+    nav{
+        height: 60px;
+    }
+
+    .strokeLuar{
+        width: 100%;
+        height: 60px;
+        border-radius: 0 0 0 0;
+        align-items: end;
+    }
+
+    .strokeDalam{
+        width: 100%;
+        height: 50px;
+        border-radius: 12px 12px 0 0;
+        background-color: #347557;
+    }
+
+    svg{
+        height: 30px;
+    }
+
+    .active{
+        width: 50px;
+        height: 50px;
+        top: -30px;
+    }
+
+    .active.tombol svg{
+        height: 30px;
+    }
+
+    .strokeDalam .tombol p{
+        top: 50px;
+        font-size: 8px;
+    }
+
+    .container main .page{
+        grid-template-rows: 15vh 1fr 90px;
+    }
+}

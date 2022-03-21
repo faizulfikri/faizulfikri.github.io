@@ -1,0 +1,194 @@
+.page .content.tiga{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 10px;
+    height: 100%;
+    width: 50%;
+    align-self: center;
+    text-align: center;
+    color: white;
+}
+
+/* Judul */
+.page .content.tiga .judul-tiga{
+    grid-row: 1/2;
+    font-size: 28px;
+}
+
+/* TANGAL */
+.page .content.tiga .tanggal-2{
+    grid-row: 2/3;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .content.tiga .tanggal-2 .masehi{
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .content.tiga .tanggal-2 .masehi span{
+    width: 3px;
+    height: 40px;
+    background-color: white;
+    margin: 3px 20px;
+}
+
+.page .content.tiga .tanggal-2 .masehi h4{
+    font-size: 32px;
+    align-self: center;
+}
+
+.page .content.tiga .tanggal-2 h6{
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+/* Acara */
+.page .content.tiga .container-acara{
+    grid-row: 3/4;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.page .content.tiga .container-acara span{
+    width: 3px;
+    height: 70px;
+    background-color: white;
+    margin: 3px 40px;
+}
+
+.page .content.tiga .container-acara h3{
+    font-size: 28px;
+    text-shadow: 2px 2px rgba(0, 0, 0, .4);
+}
+
+.page .content.tiga .container-acara h6{
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.page .content.tiga .container-acara .info-akad{
+    justify-self: end;
+    text-align: end;
+    align-self: center;
+}
+
+.page .content.tiga .container-acara .info-resepsi{
+    justify-self: start;
+    text-align: start;
+    align-self: center;
+}
+
+/* Doa */
+.page .content.tiga .doa{
+    font-size: 12px;
+    grid-row: 4/5;
+    letter-spacing: 1px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Hitung Mundur */
+.page .content.tiga .menghitung{
+    grid-row: 5/6;
+}
+
+.page .content.tiga .menghitung .hitungMundur{
+    font-size: 28px;
+    text-shadow: 2px 2px rgba(0, 0, 0, .4);
+}
+
+.page .content.tiga .menghitung .countdown{
+    width: 40%;
+    height: 50px;
+    background-color: #347557;
+    margin: 0 auto;
+    border-radius: 25px;
+    box-shadow: 2px 2px rgba(0, 0, 0, .8);
+}
+
+.page .content.tiga .menghitung .countdown .mid{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.page .content.tiga .menghitung .countdown .angka{
+    font-size: 26px;
+}
+
+@media (max-width:576px) {
+    .page .content.tiga{
+        width: 100%;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .page .content.tiga .judul-tiga{
+        font-size: 24px;
+        font-weight: lighter;
+    }
+
+    .page .content.tiga .tanggal-2{
+        align-self: center;
+    }
+
+    .page .content.tiga .tanggal-2 .masehi span{
+        height: 32px;
+    }
+
+    .page .content.tiga .tanggal-2 .masehi h4{
+        font-size: 26px;
+    }
+
+    .page .content.tiga .tanggal-2 .masehi h6{
+        font-size: 12px;
+    }
+
+    .page .content.tiga .container-acara span{
+        height: 70px;
+        margin: 0 20px;
+    }
+
+    .page .content.tiga .container-acara h3{
+        font-size: 24px;
+    }
+
+    .page .content.tiga .container-acara h6{
+        font-size: 11px;
+        letter-spacing: 0;
+    }
+
+    .page .content.tiga .doa{
+        font-size: 10px;
+        width: 100%;
+        letter-spacing: 0;
+    }
+
+    .page .content.tiga .menghitung .hitungMundur{
+        font-size: 24px;
+    }
+
+    .page .content.tiga .menghitung .countdown{
+        width: 200px;
+        height: 45px;
+    }
+
+    .page .content.tiga .menghitung .countdown p{
+        font-size: 10px;
+    }
+
+    .page .content.tiga .menghitung .countdown .angka{
+        font-size: 22px;
+    }
+}
+
