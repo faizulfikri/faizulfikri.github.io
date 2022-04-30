@@ -8,6 +8,7 @@ function inisialisasi(){
     const containerRSVP = document.querySelector(".container-ucapan");
     const commentSection = document.querySelectorAll(".ucapan-dalam .tab");
     const tabMenu = document.querySelectorAll(".navigasi-ucapan .tab-menu");
+    const tombolPlay = document.querySelector(".tombol-play");
 
 
     menus.forEach((menu,index) => {
@@ -25,7 +26,7 @@ function inisialisasi(){
     }
 
     function countDownPernikahan(){
-        const theDay = new Date(2022, 4, 22, 10, 00);
+        const theDay = new Date(2022, 4, 21, 10, 30);
 
         let $days = document.querySelector(".hari .angka");
         let $hours = document.querySelector(".jamJam .angka");
@@ -365,6 +366,28 @@ function inisialisasi(){
         },300);
         hal = noHalaman;
     }
+
+
+    let countPlay = 0;
+    tombolPlay.addEventListener('click', function(){
+        const backgroundSound = document.querySelector("audio");
+        const pauseButton = document.querySelector(".icon-pause");
+        const playButton = document.querySelector(".icon-play");
+
+        if(countPlay == 0){
+            pauseButton.style.display = "none";
+            playButton.style.display = "block";
+            backgroundSound.pause();
+            countPlay = 1;
+        }
+        else if(countPlay == 1){
+            playButton.style.display = "none";
+            pauseButton.style.display = "block";
+            backgroundSound.play();
+            countPlay = 0;
+        }
+
+    });
 
 }
 

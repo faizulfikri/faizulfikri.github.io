@@ -67,6 +67,7 @@
     right: 100px;
 }
 
+/* ukuran */
 .container .hiasan img.daun{
     height: 250px;
 }
@@ -89,52 +90,52 @@
 
 @media (max-width:576px) {
     .container .hiasan img.daun{
-        height: 150px;
+        height: 25vh;
     }
 
     .container .hiasan img.bunga{
-        height: 25px;
+        height: 4vh;
     }
     
     .container .hiasan .kiri img.kering{
-        height: 180px;
+        height: 30vh;
     }
     
     .container .hiasan .kanan img.kering{
-        height: 100px;
+        height: 15vh;
     }
 
     .container .hiasan img.diatas, .container .hiasan img.diatas-1{
-        height: 250px;
+        height: 40vh;
     }
 
     .container .hiasan .kiri .bunga.kiri-tengah{
         position: absolute;
         left: 10px;
-        top: 170px;
+        top: 29vh;
     }
 
     .container .hiasan .kanan .bunga.kanan-tengah{
         position: absolute;
-        right: 20px;
-        bottom: 240px;
+        right: 5vw;
+        bottom: 40vh;
     }
 
     .container .hiasan .kiri .kering.kiri-bawah{
         position: absolute;
         bottom: 0;
-        left: 30px;
+        left: 10vw;
     }
 
     .container .hiasan .kanan .kering.kanan-atas{
         position: absolute;
-        right: 30px;
+        right: 10vw;
         top: 0;
     }
 
     .container .hiasan img.diatas-1{
         position: absolute;
-        top: 100px;
+        top: 20vh;
         right: 0px;
     }
 }

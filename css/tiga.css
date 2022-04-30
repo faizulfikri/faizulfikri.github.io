@@ -126,7 +126,73 @@
     font-size: 26px;
 }
 
-@media (max-width:576px) {
+@media screen and (max-width:576px) and (max-height:900px){
+    .page .content.tiga{
+        width: 100%;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .page .content.tiga .judul-tiga{
+        font-size: 25px;
+        font-weight: lighter;
+    }
+
+    .page .content.tiga .tanggal-2{
+        align-self: center;
+    }
+
+    .page .content.tiga .tanggal-2 .masehi span{
+        height: 34px;
+    }
+
+    .page .content.tiga .tanggal-2 .masehi h4{
+        font-size: 28px;
+    }
+
+    .page .content.tiga .tanggal-2 h6{
+        font-size: 13px;
+    }
+
+    .page .content.tiga .container-acara span{
+        height: 75px;
+        margin: 0 20px;
+    }
+
+    .page .content.tiga .container-acara h3{
+        font-size: 26px;
+    }
+
+    .page .content.tiga .container-acara h6{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .page .content.tiga .doa{
+        font-size: 11px;
+        width: 100%;
+        letter-spacing: 0;
+    }
+
+    .page .content.tiga .menghitung .hitungMundur{
+        font-size: 24px;
+    }
+
+    .page .content.tiga .menghitung .countdown{
+        width: 200px;
+        height: 45px;
+    }
+
+    .page .content.tiga .menghitung .countdown p{
+        font-size: 10px;
+    }
+
+    .page .content.tiga .menghitung .countdown .angka{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:576px) and (max-height:700px){
     .page .content.tiga{
         width: 100%;
         gap: 5px;
@@ -150,7 +216,7 @@
         font-size: 26px;
     }
 
-    .page .content.tiga .tanggal-2 .masehi h6{
+    .page .content.tiga .tanggal-2 h6{
         font-size: 12px;
     }
 
@@ -159,7 +225,7 @@
         margin: 0 20px;
     }
 
-    .page .content.tiga .container-acara h3{
+    .page .content.tiga .container-acara h3, .page .content.tiga .menghitung .countdown h3{
         font-size: 24px;
     }
 

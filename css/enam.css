@@ -54,7 +54,33 @@
     cursor: pointer;
 }
 
-@media (max-width:576px) {
+@media screen and (max-width:576px) and (max-height:900px) {
+    .page .content.enam{
+        width: 100%;
+        gap: 5px;
+    }
+
+    .page .content.enam .tulisan-arab{
+        font-size: 20px;
+    }
+
+    .page .content.enam .latin{
+        font-size: 13px;
+        letter-spacing: 0;
+        font-style: italic;
+    }
+
+    .page .content.enam .pembatas{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .page .content.enam .terjemahan p, .page .content.enam .konfirmasi p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:576px) and (max-height:700px) {
     .page .content.enam{
         width: 100%;
         gap: 5px;

@@ -44,7 +44,38 @@
     letter-spacing: 1px;
 }
 
-@media (max-width:576px) {
+@media screen and (max-width:576px) and (max-height:900px) {
+    .page .content.dua{
+        grid-template-rows: repeat (auto);
+        width: 90%;
+        height: 90%;
+        gap: 10px;
+    }
+
+    .page .content.dua h1{
+        font-size: 30px;
+    }
+
+    .page .content.dua h4{
+        font-size: 24px;
+    }
+
+    .page .content.dua .p-satu, .page .content.dua .p-dua{
+        font-size: 11px;
+    }
+
+    .page .content.dua .container-pengantin{
+        gap: 15px;
+        height: 153px;
+    }
+
+    .page .content.dua .container-pengantin h6{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+}
+
+@media screen and (max-width:576px) and (max-height:700px) {
     .page .content.dua{
         grid-template-rows: repeat (auto);
         width: 90%;

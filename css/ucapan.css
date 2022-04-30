@@ -77,6 +77,10 @@
     margin: 0  auto;
 }
 
+.container-ucapan .ucapan-dalam .tab h3{
+    font-weight: lighter;
+}
+
 /* container form */
 .container-ucapan .ucapan-dalam .form-kehadiran form{
     width: 80%;
@@ -98,6 +102,40 @@
     border-radius: 15px;
     background-color: #347557;
     color: white;
+}
+
+.container-ucapan .ucapan-dalam .form-kehadiran .noti{
+    display: flex;
+    background-color: #347557;
+    width: 80%;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.noti-deactive{
+    display: none;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.noti-active{
+    opacity: 1;
+    display: block;
+    pointer-events: all;
+}
+
+.container-ucapan .ucapan-dalam .form-kehadiran .noti h5{
+    margin-left: 10px;
+}
+
+.container-ucapan .ucapan-dalam .form-kehadiran .noti svg{
+    height: 15px;
+    width: 25px;
+    fill: black;
 }
 
 /* container area komen */
