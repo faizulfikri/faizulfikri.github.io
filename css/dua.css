@@ -1,6 +1,6 @@
 .page .content.dua{
     display: grid;
-    color: white;
+    color: #B48126;
     text-align: center;
     grid-template-rows: 20px auto auto auto auto 20px;
     align-items: center;
@@ -53,15 +53,15 @@
     }
 
     .page .content.dua h1{
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .page .content.dua h4{
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .page .content.dua .p-satu, .page .content.dua .p-dua{
-        font-size: 11px;
+        font-size: 12px;
     }
 
     .page .content.dua .container-pengantin{
@@ -84,15 +84,15 @@
     }
 
     .page .content.dua h1{
-        font-size: 30px;
+        font-size: 32px;
     }
 
     .page .content.dua h4{
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .page .content.dua .p-satu, .page .content.dua .p-dua{
-        font-size: 9px;
+        font-size: 10px;
     }
 
     .page .content.dua .container-pengantin{

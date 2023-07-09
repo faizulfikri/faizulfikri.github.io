@@ -26,7 +26,7 @@ function inisialisasi(){
     }
 
     function countDownPernikahan(){
-        const theDay = new Date(2022, 4, 21, 10, 30);
+        const theDay = new Date(2023, 8, 10, 10, 0);
 
         let $days = document.querySelector(".hari .angka");
         let $hours = document.querySelector(".jamJam .angka");
@@ -319,6 +319,9 @@ function inisialisasi(){
     bukaUndangan.addEventListener('click', function(){
         const halamanSatu = document.querySelector(".one");
         const coverUndangan = document.querySelector(".cover-undangan");
+        const backgroundSound = document.querySelector("audio");
+
+        backgroundSound.play();
         coverUndangan.classList.add("tidakAktif");
         animasiSatu(halamanSatu);
     });

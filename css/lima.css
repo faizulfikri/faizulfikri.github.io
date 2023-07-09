@@ -7,7 +7,7 @@
     align-self: center;
     justify-self: center;
     text-align: center;
-    color: white;
+    color: #B48126;
 }
 
 .page .content.lima .judulLima h2{
@@ -80,7 +80,7 @@
     }
 
     .page .content.lima .imbauan p{
-        font-size: 10px;
+        font-size: 12px;
         letter-spacing: 0;
     }
 

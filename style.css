@@ -16,7 +16,7 @@
 }
 
 svg{
-    stroke: #ffffff;
+    stroke: #B48126;
     stroke-width: 6;
     stroke-linecap: round;
     stroke-linejoin: round;
@@ -32,7 +32,7 @@ svg{
 .container{
     width: 100%;
     height: 100vh;
-    background-color: #a1c6b4;
+    background-color: #F4EDE5;
     overflow: hidden;
 }
 
@@ -88,7 +88,7 @@ nav{
 .strokeLuar{
     width: 40%;
     height: 50px;
-    background-color: #347557;
+    background-color: #003E39;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -102,7 +102,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #347557;
+    background-color: #003E39;
 }
 
 .strokeDalam .tombol p{
@@ -116,7 +116,7 @@ nav{
 .active{
     width: 60px;
     height: 60px;
-    background-color: white;
+    background-color: #B48126;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -130,7 +130,7 @@ nav{
 }
 
 .active.tombol svg{
-    stroke:#347557;
+    stroke: white;
     height: 37px;
 }
 
@@ -168,7 +168,7 @@ nav{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid #003E39;
     position: absolute;
     bottom: 20%;
     left: 0;
@@ -299,7 +299,7 @@ nav{
         width: 100%;
         height: 50px;
         border-radius: 12px 12px 0 0;
-        background-color: #347557;
+        background-color: #003E39;
     }
 
     svg{
