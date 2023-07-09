@@ -93,6 +93,7 @@
 
 .container-ucapan .ucapan-dalam .form-kehadiran form #nama, .container-ucapan .ucapan-dalam .form-kehadiran form #kehadiraan{
     height: 40px;
+    border: none;
     border-radius: 5px;
     padding: 5px;
 }
@@ -108,6 +109,11 @@
     background-color: white;
     color: #003E39;
     border: none;
+    font-weight: bold;
+}
+
+.container-ucapan .ucapan-dalam .form-kehadiran label{
+    font-size: 11px;
 }
 
 .container-ucapan .ucapan-dalam .form-kehadiran .noti{
