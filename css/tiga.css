@@ -12,6 +12,7 @@
 /* Judul */
 .page .content.tiga .judul-tiga{
     grid-row: 1/2;
+    font-weight: lighter;
     font-size: 28px;
 }
 
