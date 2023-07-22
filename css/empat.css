@@ -23,7 +23,7 @@
 }
 
 .page .content.empat .alamat p{
-    font-size: 14px;
+    font-size: 18px;
     letter-spacing: 1px;
 }
 
@@ -55,7 +55,7 @@
 
     .page .content.empat .alamat p{
         letter-spacing: 0;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .page .content.empat button{
@@ -81,7 +81,7 @@
 
     .page .content.empat .alamat p{
         letter-spacing: 0;
-        font-size: 11px;
+        font-size: 15px;
     }
 
     .page .content.empat button{
