@@ -33,7 +33,7 @@
 .page .content.lima .protokol .atas{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .page .content.lima .protokol .bawah{
