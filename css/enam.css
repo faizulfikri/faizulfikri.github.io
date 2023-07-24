@@ -55,7 +55,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width:576px) and (max-height:900px) {
+@media screen and (max-width:576px) and (max-height:920px) {
     .page .content.enam{
         width: 100%;
         gap: 5px;
